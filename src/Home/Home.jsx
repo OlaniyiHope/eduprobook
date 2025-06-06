@@ -16,7 +16,9 @@ const Home = () => {
   useEffect(() => {
     const fetchDownloads = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/book`);
+        const response = await axios.get(
+          `https://eduproapi.vercel.app/api/book`
+        );
         setDownloads(response.data.data); // Update downloads state with fetched data
         setLoading(false);
       } catch (error) {

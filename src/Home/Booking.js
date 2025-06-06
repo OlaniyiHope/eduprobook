@@ -12,7 +12,7 @@ const Booking = (props) => {
 
     // Fetch the book details by ID
     axios
-      .get(`http://localhost:5000/api/book/${id}`)
+      .get(`https://eduproapi.vercel.app/api/book/${id}`)
       .then((response) => {
         setBook(response.data); // Update the state with the fetched book details
       })

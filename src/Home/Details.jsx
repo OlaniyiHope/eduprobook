@@ -17,7 +17,7 @@ const Details = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/book/${id}`
+          `https://eduproapi.vercel.app/api/book/${id}`
         );
         setBook(response.data.data);
       } catch (error) {
